@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="maze.css">
+    <title>Maze Game</title>
+</head>
+<body>
+    <div id="postgame">
+        <h1 id="yd">YOU DIED</h1>
+        <img id="img2" src="skull.webp" alt="instructions">
+        <h1 id="fs">Final Score: </h3>
+        <button id="rego">Play Again</button>
+    </div>
+    <div id="pregame">
+        <h1>Welcome!</h1>
+        <h3>Controls: W A S D or arrow keys for up down left right <br> Objective: Move the green sqaure through the maze to the red sqaure while collecting as many coins as possible. After a delay, the blue flood will start chasing after you. If it catches you, you lose. <br> Below, you can either choose a built-in difficulty or you can make your own with the options to the left. You can also set your player's color to be something other than green. Don't make it black, blue, or red as it may confuse you. <br> Good Luck!</h3>
+        <img src="example.png" alt="instructions" id="img1">
+    <div id="advanced">
+        <h1 id="settings">Custom Settings</h1>
+        <br>
+        <br>
+        <br>
+        <div id="presets">
+        <h1>Presets</h1>
+        <button class="preset" id="easy">EASY</button>
+        <button class="preset" id="med">STANDARD</button>
+        <button class="preset" id="hard">HARD</button>
+        <button class="preset" id="hard2">IMPOSSIBLE</button>
+        <button class="preset" id="hard3">REALLY...?</button>
+        </div>
+        <h5>Difficulty</h5>
+        <input type="range" id="diff" name="points" min="10" max="100" value="50">
+        <h5>Delay</h5>
+        <input type="range" id="delay" name="points" min="2" max="10" value="5">
+        <h5>Obstacles</h5>
+        <input type="range" id="obf" name="points" min="20" max="40" value="30">
+        <h5 id="bs">Board Size (5-200)</h5>
+        <input type="number" min="5" max="200" id="size" value="30">
+        <h5>Player Color</h5>
+        <input type="color" id="color" value="#00FF00">
+        <br>
+        <br>
+        <button id="go">Let's Play!</button>
+    </div>
+    <!-- <div id="initial">
+        <h5>Difficulty</h5>
+        <input type="range" id="diff" name="points" min="10" max="100" value="50">
+        <h5>Delay</h5>
+        <input type="range" id="diff" name="points" min="2" max="10" value="5">
+        <h5>Obstacles</h5>
+        <input type="range" id="obf" name="points" min="20" max="40" value="30">
+        <h5 id="bs">Board Size (5-200)</h5>
+        <input type="number" min="5" max="200" id="size" value="30">
+        <h5>Player Color</h5>
+        <input type="color" id="color" value="#00FF00">
+        <br>
+        <br>
+        <button id="go">Let's Play!</button>
+    </div> -->
+    </div>
+    <div id="header">
+        <h1 id='level'>LEVEL 1</h1>
+        <h4 id='score'>Current Score: 0</h4>
+    </div>
+    <canvas id="main"></canvas>
+    <!-- <div id="controlbuttons">
+        <button id="up" class="motion">UP</button>
+        <button id="down" class="motion">DOWN</button>
+        <button id="left" class="motion">LEFT</button>
+        <button id="right" class="motion">RIGHT</button>
+    </div> -->
+    <script src="maze.js"></script>
+</body>
+</html>
